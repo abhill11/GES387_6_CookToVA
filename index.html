@@ -160,7 +160,7 @@
       //   var marker = L.circleMarker(latlng);
       //    return marker.bindPopup('' + latlng)
       // },
-
+// I wanted to add a popup without the marker, but had not figured it out yet. The markers would be fine customized, but it want's to add on to Cook County's location with the name of one of the VA counties. 
 var  Popup = L.geoJson(FromCook_ToVA,{
               }).bindPopup(function (layer){
               return layer.feature.properties.County_B
@@ -171,7 +171,7 @@ var  Popup = L.geoJson(FromCook_ToVA,{
 
               title.onAdd = function (map) {
                   this._div = L.DomUtil.create('div', 'title'); // create a div with a class "title"
-                  this._div.innerHTML = "<h3>Top 5 Migration to Virgina Counties from Cook County, IL</h3>";  // Title text, may use html to customize
+                  this._div.innerHTML = "<h3>Top 5 Migration to Virginia Counties from Cook County, IL</h3>";  // Title text, may use html to customize
                   return this._div;
               };
 
